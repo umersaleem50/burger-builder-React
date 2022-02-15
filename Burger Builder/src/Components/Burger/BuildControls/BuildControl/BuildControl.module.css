@@ -1,0 +1,55 @@
+.BuildControl {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 40%;
+
+  /* background-color: #f3c892; */
+}
+
+.BuildControl button {
+  display: block;
+  margin: 0 5px;
+  width: 80px;
+  outline: none;
+  font: inherit;
+  box-shadow: 1px 3px 4px #bd9c74;
+  transition: 0.2s ease-in;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* color: #eee; */
+  /* font-weight: bold; */
+}
+
+.BuildControl p {
+  font-size: 1.2rem;
+  font: inherit;
+  width: 60%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.BuildControl button:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 3px 4px rgb(161, 161, 161);
+}
+
+.BuildControl .Less {
+  background-color: #ff5959;
+}
+
+.BuildControl .Less:disabled {
+  background-color: #ff5959c7;
+  /* color: rgba(73, 73, 73, 0.514); */
+}
+
+.BuildControl .More {
+  background-color: #a3da8d;
+}
+
+@media (max-width: 500px) {
+  .BuildControl {
+    width: 70%;
+  }
+}
