@@ -1,0 +1,49 @@
+.BuildControls {
+  display: flex;
+  flex-flow: column;
+  background-color: #f3c892;
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.BuildControls .btnOrder {
+  display: inline-block;
+  width: 130px;
+  padding: 20px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px rgba(119, 119, 119, 0.404);
+  margin: 20px auto;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+/* .BuildControls .btnOrder:active {
+  animation: enabled 0.5s ease-in;
+} */
+
+.BuildControls .btnOrder:not(:disabled) {
+  animation: enabled 0.5s ease-in;
+}
+
+.BuildControls .btnOrder:disabled {
+  background-color: rgba(210, 105, 30, 0.747);
+  animation: none;
+}
+
+@keyframes enabled {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
